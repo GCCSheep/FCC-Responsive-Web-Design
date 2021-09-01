@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: ivory;
+  background-color: darkred;
+  background-attachment: fixed;
+  background-image:
+    linear-gradient(to bottom, rgba(70, 0, 0, 0.5), rgba(70, 0, 0, 0.5)),
+    url("https://live.staticflickr.com/65535/50339705362_0336be6ce5_b.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  line-height: 1.5;
+  font-size: 1.2rem;
+}
+
+header > h1 {
+  font-weight: normal;
+}
+
+header > p {
+  font-style: italic;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px black;
+}
+
+form {
+  background-color: rgba(0, 0, 0, 0.75);
+  width: 100%;
+  max-width: 800px;
+  padding: 1rem 2rem;
+  margin: 2rem auto;
+  border-radius: 5px;
+  text-align: left;
+}
+
+.form-group {
+  margin: 1rem 0;
+}
+
+label[for="name"],
+label[for="email"],
+label[for="number"],
+.form-control {
+  display: block;
+}
+
+label[for="name"],
+label[for="email"],
+label[for="number"],
+form p {
+  margin-bottom: 0.5rem;
+}
+
+.clue {
+  font-size: 1rem;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select,
+textarea,
+button {
+  width: 100%;
+  font-family: inherit;
+  font-size: 1rem;
+  border-radius: 3px;
+  border-style: none;
+  border: 2px solid rgba(0, 0, 0, 0);
+  padding: 0.5rem 1rem;
+  transition: border-color 0.1s ease-in-out;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  width: 1.2rem;
+  height: 1.2rem;
+  vertical-align: middle;
+  margin-right: 0.5rem;
+  transition: outline-color 0.1s ease-in-out;
+}
+
+input:focus,
+select:focus {
+  border: 2px solid forestgreen;
+  outline: 0;
+}
+
+input[type="radio"]:focus,
+input[type="checkbox"]:focus {
+  outline: solid forestgreen;
+}
+
+button {
+  color: inherit;
+  background-color: forestgreen;
+  cursor: pointer;
+}

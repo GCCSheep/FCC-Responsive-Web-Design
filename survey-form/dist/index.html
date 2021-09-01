@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Survey Form</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<header>
+      <h1 id="title">myCuisine Survey Form</h1>
+      <p id="description">Thank you for taking the time to help us improve our restaurant</p>
+    </header>
+    <main>
+      <form id="survey-form" class="" action="index.html" method="post">
+        <div class="form-group">
+          <label id="name-label" for="name">Name</label>
+          <input id="name" type="text" name="name" placeholder="Enter your name" required>
+        </div>
+        <div class="form-group">
+          <label id="email-label" for="email">Email</label>
+          <input id="email" type="email" name="email" placeholder="Enter your email" required>
+        </div>
+        <div class="form-group">
+          <label id="number-label" for="number">Age <span class="hint">(optional)</span></label>
+          <input id="number" type="number" name="age" placeholder="Enter your age" min="1" max="99">
+        </div>
+        <div class="form-group">
+          <p>How many times have you eaten at myCuisine?</p>
+          <select id="dropdown" class="">
+            <option disabled selected>Select an option</option>
+            <option value="0">Never</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+            <option value="4+">Four or more</option>
+            <option value="n/a">Don't know / Don't want to say</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <p>Would you recommend myCuisine to a friend?</p>
+          <div class="form-control">
+            <input id="yes" type="radio" name="recommendation" value="yes">
+            <label for="yes">Yes</label>
+          </div>
+          <div class="form-control">
+            <input id="no" type="radio" name="recommendation" value="no">
+            <label for="no">No</label>
+          </div>
+          <div class="form-control">
+            <input id="maybe" type="radio" name="recommendation" value="maybe">
+            <label for="maybe">Maybe</label>
+          </div>
+        </div>
+        <div class="form-group">
+          <p>What is your favorite feature of myCuisine?</p>
+          <select id="dropdown2">
+            <option disabled selected>Select an option</option>
+            <option value="food-quality">Food Quality</option>
+            <option value="dining-experience">Dining Experience</option>
+            <option value="ambience">Ambience</option>
+            <option value="cleanliness">Cleanliness</option>
+            <option value="uniqueness">Uniqueness</option>
+            <option value="pricing">Pricing</option>
+            <option value="n/a">Don't know / Don't want to say</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <p>What would you like to see improved? <span class="clue">(Check all that apply)</span></p>
+          <div class="form-control">
+            <input id="steak-fries" type="checkbox" value="steak-fries">
+            <label for="steak-fries">Steak Fries</label>
+          </div>
+          <div class="form-control">
+            <input id="sushi" type="checkbox" value="sushi">
+            <label for="sushi">Sushi</label>
+          </div>
+          <div class="form-control">
+            <input id="lamb-chops" type="checkbox" value="lamb-chops">
+            <label for="lamb-chops">Lamb Chops</label>
+          </div>
+          <div class="form-control">
+            <input id="lobster-bisque" type="checkbox" value="lobster-bisque">
+            <label for="lobster-bisque">Lobster Bisque</label>
+          </div>
+          <div class="form-control">
+            <input id="dumplings" type="checkbox" value="dumplings">
+            <label for="dumplings">Dumplings</label>
+          </div>
+          <div class="form-control">
+            <input id="ribs" type="checkbox" value="ribs">
+            <label for="ribs">Ribs</label>
+          </div>
+          <div class="form-control">
+            <input id="chicken-tikka-masala" type="checkbox" value="chicken-tikka-masala">
+            <label for="chicken-tikka-masala">Chicken Tikka Masala</label>
+          </div>
+          <div class="form-control">
+            <input id="osso-buco" type="checkbox" value="osso-buco">
+            <label for="osso-buco">Osso Buco</label>
+          </div>
+          <div class="form-control">
+            <input id="crab-cakes" type="checkbox" value="crab-cakes">
+            <label for="crab-cakes">Crab Cakes</label>
+          </div>
+          <div class="form-control">
+            <input id="lasagna" type="checkbox" value="lasagna">
+            <label for="lasagna">Lasagna</label>
+          </div>
+        </div>
+        <div class="form-group">
+          <p>Comments / Suggestions</p>
+          <textarea rows="8" cols="80" placeholder="Enter your comments or suggestions here..."></textarea>
+        </div>
+        <button id="submit" type="submit">Submit</button>
+      </form>
+    </main>
+<!-- partial -->
+  
+</body>
+</html>
